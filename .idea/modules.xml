@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/00-Test/00-Test.iml" filepath="$PROJECT_DIR$/00-Test/00-Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/00-leetcode/00-leetcode.iml" filepath="$PROJECT_DIR$/00-leetcode/00-leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-复杂度/01-复杂度.iml" filepath="$PROJECT_DIR$/01-复杂度/01-复杂度.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-链表/03-链表.iml" filepath="$PROJECT_DIR$/03-链表/03-链表.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-栈/04-栈.iml" filepath="$PROJECT_DIR$/04-栈/04-栈.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-二叉搜索树/06-二叉搜索树.iml" filepath="$PROJECT_DIR$/06-二叉搜索树/06-二叉搜索树.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-AVL树/07-AVL树.iml" filepath="$PROJECT_DIR$/07-AVL树/07-AVL树.iml" />
+      <module fileurl="file://$PROJECT_DIR$/优先级队列/bin/com/mj/12-堆/12-堆.iml" filepath="$PROJECT_DIR$/优先级队列/bin/com/mj/12-堆/12-堆.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/优先级队列/优先级队列.iml" filepath="$PROJECT_DIR$/优先级队列/优先级队列.iml" />
+      <module fileurl="file://$PROJECT_DIR$/动态数组/动态数组.iml" filepath="$PROJECT_DIR$/动态数组/动态数组.iml" />
+      <module fileurl="file://$PROJECT_DIR$/哈希表/哈希表.iml" filepath="$PROJECT_DIR$/哈希表/哈希表.iml" />
+      <module fileurl="file://$PROJECT_DIR$/堆/堆.iml" filepath="$PROJECT_DIR$/堆/堆.iml" />
+      <module fileurl="file://$PROJECT_DIR$/排序/排序.iml" filepath="$PROJECT_DIR$/排序/排序.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/算法.iml" filepath="$PROJECT_DIR$/.idea/算法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/贪心/贪心.iml" filepath="$PROJECT_DIR$/贪心/贪心.iml" />
     </modules>
   </component>
 </project>
