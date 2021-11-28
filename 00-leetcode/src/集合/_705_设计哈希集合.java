@@ -9,8 +9,8 @@ import java.util.LinkedList;
  * 链地址法
  */
 public class _705_设计哈希集合 {
-    //    定义数组最大值
-    private int base = 786;
+    //    定义数组最大值，最好是质数
+    private int base = 769;
     //    定义链表数组
     private LinkedList[] data;
 
