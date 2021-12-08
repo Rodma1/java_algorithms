@@ -2,7 +2,6 @@ package com.mj;
 
 import java.util.Comparator;
 
-import com.mj.BinarySearchTree.Visitor;
 import com.mj.file.Files;
 import com.mj.printer.BinaryTreeInfo;
 import com.mj.printer.BinaryTrees;
@@ -164,7 +163,7 @@ public class Main {
 		    2   5
 		 */
 		
-//		bst.levelOrder(new Visitor<Integer>() {
+//		bst.Visitor(new Visitor<Integer>() {
 //			public void visit(Integer element) {
 //				System.out.print("_" + element + "_ ");
 //			}
@@ -220,7 +219,16 @@ public class Main {
 		}
 		BinaryTrees.println(bst);
 		
-		bst.preorder(new Visitor<Integer>() {
+		bst.preorder(new BinarySearchTree.Visitor() {
+			/**
+			 * @param element
+			 * @return 如果返回true，就代表停止遍历
+			 */
+			@Override
+			public boolean visit(Object element) {
+				return false;
+			}
+
 			public boolean visit(Integer element) {
 				System.out.print(element + " ");
 				return element == 2 ? true : false;
@@ -228,7 +236,16 @@ public class Main {
 		});
 		System.out.println();
 		
-		bst.inorder(new Visitor<Integer>() {
+		bst.inorder(new BinarySearchTree.Visitor() {
+			/**
+			 * @param element
+			 * @return 如果返回true，就代表停止遍历
+			 */
+			@Override
+			public boolean visit(Object element) {
+				return false;
+			}
+
 			public boolean visit(Integer element) {
 				System.out.print(element + " ");
 				return element == 4 ? true : false;
@@ -236,7 +253,16 @@ public class Main {
 		});
 		System.out.println();
 		
-		bst.postorder(new Visitor<Integer>() {
+		bst.postorder(new BinarySearchTree.Visitor() {
+			/**
+			 * @param element
+			 * @return 如果返回true，就代表停止遍历
+			 */
+			@Override
+			public boolean visit(Object element) {
+				return false;
+			}
+
 			public boolean visit(Integer element) {
 				System.out.print(element + " ");
 				return element == 4 ? true : false;
@@ -244,7 +270,16 @@ public class Main {
 		});
 		System.out.println();
 		
-		bst.levelOrder(new Visitor<Integer>() {
+		bst.levelOrder(new BinarySearchTree.Visitor() {
+			/**
+			 * @param element
+			 * @return 如果返回true，就代表停止遍历
+			 */
+			@Override
+			public boolean visit(Object element) {
+				return false;
+			}
+
 			public boolean visit(Integer element) {
 				System.out.print(element + " ");
 				return element == 9 ? true : false;
