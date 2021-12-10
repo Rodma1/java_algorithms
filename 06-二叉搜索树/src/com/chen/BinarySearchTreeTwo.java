@@ -11,6 +11,7 @@ public class BinarySearchTreeTwo<E> implements TreeDao<E>{
 //    定义头节点
     private Node<E> root;
     private comparator<E> comparator;
+    private int size;
 //无参比较器
     public BinarySearchTreeTwo() {
     this(null);
@@ -37,17 +38,18 @@ public class BinarySearchTreeTwo<E> implements TreeDao<E>{
 
     @Override
     public int size() {
-        return 0;
+        return size;
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size==0;
     }
 
     @Override
     public void clear() {
-
+        size=0;
+        root=null;
     }
 
     /**
@@ -60,6 +62,7 @@ public class BinarySearchTreeTwo<E> implements TreeDao<E>{
 //        添加第一个节点
         if (root==null){
             root=new Node<>(element,null);
+            size++;
             return;
         }
         // 添加的不是第一个节点
@@ -93,6 +96,7 @@ public class BinarySearchTreeTwo<E> implements TreeDao<E>{
         else {
             parent.left = newNode;
         }
+        size++;
     }
 
     @Override

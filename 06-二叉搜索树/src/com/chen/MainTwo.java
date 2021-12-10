@@ -26,5 +26,14 @@ public class MainTwo {
                 System.out.print(element+"_");
             }
         });
+        System.out.println();
+//        大小
+        System.out.println(bst.size());
+//        清空
+        System.out.println("清空树");
+        bst.clear();
+//        判断是否为空
+        System.out.println("是否清空"+bst.isEmpty());
+
     }
 }
