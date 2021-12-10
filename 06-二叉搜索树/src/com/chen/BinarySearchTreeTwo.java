@@ -11,7 +11,10 @@ public class BinarySearchTreeTwo<E> implements TreeDao<E>{
 //    定义头节点
     private Node<E> root;
     private comparator<E> comparator;
-
+//无参比较器
+    public BinarySearchTreeTwo() {
+    this(null);
+}
 //    自定义比较器
     public BinarySearchTreeTwo(comparator<E> comparator) {
         this.comparator = comparator;
@@ -110,7 +113,11 @@ public class BinarySearchTreeTwo<E> implements TreeDao<E>{
 //    判断节点和父节点的大小
     private int compare(E o1,E o2){
 //        自定义接口比较器
-        return comparator.compare(o1,o2);
+        if(comparator!=null){
+            return comparator.compare(o1,o2);
+        }
+        //		如果没有传参，就用java中默认的构造器，如果不传，表示E强制去使用Comparable接口,强制转换
+        return ((Comparable<E>)o1).compareTo(o2);
     }
     //获取根节点
     public Node<E> getRootElement() {

@@ -14,11 +14,7 @@ public class MainTwo {
                 7, 4, 9, 2, 5, 8, 11, 3, 12, 1
         };
 //        定义二叉树对象,另外我们没有写默认比较器，所以我们这里要加上我们自定义比较器
-        BinarySearchTreeTwo<Integer> bst=new BinarySearchTreeTwo<>(new comparator<Integer>(){
-                public int compare(Integer o1,Integer o2){
-                    return o1-o2;
-                }
-        });
+        BinarySearchTreeTwo<Integer> bst=new BinarySearchTreeTwo<>();
 //        添加节点数据
         for (int i:data){
             bst.add(i);
