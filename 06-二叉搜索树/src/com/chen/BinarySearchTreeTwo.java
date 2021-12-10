@@ -106,7 +106,27 @@ public class BinarySearchTreeTwo<E> implements TreeDao<E>{
 
     @Override
     public boolean contains(E element) {
-        return false;
+
+        return node(element)!=null;
+    }
+//    查找相等元素
+    private Node<E> node(E element){
+        //        定义指针
+        Node<E> node=root;
+//        与输入进来的元素做比较
+        while (node!=null){
+            int cmp=compare(element, node.element);
+            if (cmp==0){
+                return node;
+            }
+            else if (cmp<0){
+                return node=node.left;
+            }
+            else if (cmp>0){
+                return  node=node.right;
+            }
+        }
+        return null;
     }
 //    判断传入的元素
     private void elementNotNullCheck(E element){
@@ -123,9 +143,9 @@ public class BinarySearchTreeTwo<E> implements TreeDao<E>{
         //		如果没有传参，就用java中默认的构造器，如果不传，表示E强制去使用Comparable接口,强制转换
         return ((Comparable<E>)o1).compareTo(o2);
     }
-    //获取根节点
-    public Node<E> getRootElement() {
-        return root;
+    //获取根节点值
+    public E getRootElement() {
+        return root.element;
     }
 //    打印节点
 //    实现遍历接口，层序遍历

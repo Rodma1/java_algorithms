@@ -30,10 +30,12 @@ public class MainTwo {
 //        大小
         System.out.println(bst.size());
 //        清空
-        System.out.println("清空树");
-        bst.clear();
+//        System.out.println("清空树");
+//        bst.clear();
 //        判断是否为空
-        System.out.println("是否清空"+bst.isEmpty());
+        System.out.println("是否为空"+bst.isEmpty());
+//        判断元素是否存在
+        System.out.println("元素是否存在:"+bst.contains(7));
 
     }
 }
